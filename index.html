@@ -35,9 +35,9 @@
 
 	</header>
 	<div id="app">
-			<div class="tabs">
-				
-			</div>
+		<div class="tabs">
+
+		</div>
 		<nav class="menu">
 			<div class="logo"><img src="img/logo.png" alt=""></div>
 			<ul class="desktop-menu">
@@ -49,7 +49,7 @@
 		<a href="#" class="nav__trigger"><span class="nav__icon"></span></a>
 		<nav class="nav">
 			<ul class="nav__list">
-				
+
 				<li class="nav__item nav__link main-page">O SPOLEČNOSTI
 				</li>
 				<li class="nav__item nav__link products-page">PROJEKTY</li>
@@ -79,7 +79,40 @@
 			</div>
 		</div>
 		<div id="products">
-			<h1 class="text-uppercase text-center">продукты</h1>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6 col-12 no-padding">
+						<ul id="image-gallery" class="gallery list-unstyled cS-hidden">
+							<li data-thumb="img/1.jpg">
+								<img class="img-responsive" src="img/1.jpg" />
+							</li>
+							<li data-thumb="img/2.jpg">
+								<img class="img-responsive" src="img/2.jpg" />
+							</li>
+							<li data-thumb="img/3.jpg">
+								<img class="img-responsive" src="img/3.jpg" />
+							</li>
+							<li data-thumb="img/4.jpg">
+								<img class="img-responsive" src="img/4.jpg" />
+							</li>
+							<li data-thumb="img/5.jpg">
+								<img class="img-responsive" src="img/5.jpg" />
+							</li>
+						</ul>
+					</div>
+					<div class="col-sm-6 col-12 products-container">
+						<p>Zastavěná plocha domu je 150 m2, podlahová plocha 122 m2. Dům je postaven z keramických bloků Porotherm,
+							fasáda je zateplena izolací tl. 150 mm, okna jsou plastová s trojsklem, střecha je zateplena izolací tl. 260 mm,
+							tašky jsou betonové, KM Beta. Dispozice domu 4+kk: prostorný otevřený obývací pokoj s kuchyní a jídelnou,
+							ložnice, dva dětské pokoje, šatna, koupelna se sprchovým koutem a vanou, samostatná toaleta, technická místnost
+							a zádveří. Z obývacího pokoje, ložnice a dalšího pokoje je přístupná prostorná venkovní terasa (24 m2). Dům je
+							vytápěn teplovodním podlahovým topením s plynovým kotlem, v obývacím pokoji bude možné osadit krb, nebo krbová
+							kamna. IS: elektřina 230/400 V, obecní vodovod, obecní kanalizace, zemní plyn, asfaltová komunikace, veřejné
+							osvětlení. Parkování na vlastním pozemku, na zpevněném parkovacím stání. Pozemek bude celý oplocen, včetně
+							posuvné vjezdové brány na dálkové ovládání.</p>
+					</div>
+				</div>
+			</div>
 		</div>
 		<div id="contacts">
 			<h1 class="text-uppercase text-center">контакты</h1>
@@ -103,9 +136,12 @@
 			Your browser does not support the video tag.
 		</video>
 	</div>
-
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="lightslider.js"></script>
 	<script src="js/scripts.min.js"></script>
+
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+
 </body>
 
 </html>

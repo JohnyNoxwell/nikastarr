@@ -1,3 +1,6 @@
+/*! lightslider - v1.1.6 - 2016-10-25
+* https://github.com/sachinchoolur/lightslider
+* Copyright (c) 2016 Sachin N; Licensed MIT */
 (function ($, undefined) {
     'use strict';
     var defaults = {
@@ -1138,5 +1141,3 @@
         return this;
     };
 }(jQuery));
-
-$(function(){var s=document.getElementById("app"),c=document.getElementById("myVideo");function t(){var t=s.offsetWidth,e=s.offsetHeight;c.style.height="auto",c.style.width=t+"px",c.offsetHeight<e&&(c.style.height=e+"px",c.style.width="auto"),c.style.top=(c.offsetHeight-e)/2*-1+"px",c.style.left=(c.offsetWidth-t)/2*-1+"px",console.log(c.style.width)}window.addEventListener("load",t),window.addEventListener("load",t),window.addEventListener("resize",t),$(".main-page").click(function(){$("#start").css("opacity","1").css("z-index","1111"),$("#contacts").css("opacity","0").css("z-index","0"),$("#products").css("opacity","0").css("z-index","0")}),$(".products-page").click(function(){$("#start").css("opacity","0").css("z-index","0"),$("#contacts").css("opacity","0").css("z-index","0"),$("#products").css("opacity","1").css("z-index","1111")}),$(".contacts-page").click(function(){$("#start").css("opacity","0").css("z-index","0"),$("#contacts").css("opacity","1").css("z-index","1111"),$("#products").css("opacity","0").css("z-index","0")}),$(".nav__trigger").on("click",function(t){t.preventDefault(),$(this).parent().toggleClass("nav--active")}),document.width<578&&$(".products-page").click(function(){$("#app").css("height","180vh")}),$("#image-gallery").lightSlider({gallery:!0,item:1,thumbItem:5,slideMargin:0,speed:1500,auto:!0,loop:!0,onSliderLoad:function(){$("#image-gallery").removeClass("cS-hidden")}})});
