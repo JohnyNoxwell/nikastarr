@@ -17,6 +17,8 @@
 	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,700" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
 	<!-- Chrome, Firefox OS and Opera -->
 	<meta name="theme-color" content="#000">
 	<!-- Windows Phone -->
@@ -33,21 +35,32 @@
 
 	</header>
 	<div id="app">
+			<div class="tabs">
+				
+			</div>
 		<nav class="menu">
 			<div class="logo"><img src="img/logo.png" alt=""></div>
-			<a aria-label="mobile menu" class="nav-toggle">
-				<span></span>
-				<span></span>
-				<span></span>
-			</a>
-			<ul class="menu-left">
-				<li id="main-page">главная</li>
-				<li id="products-page">продукты</li>
-				<li id="contacts-page">контакты</li>
+			<ul class="desktop-menu">
+				<li class="main-page">главная</li>
+				<li class="products-page">продукты</li>
+				<li class="contacts-page">контакты</li>
 			</ul>
 		</nav>
+		<a href="#" class="nav__trigger"><span class="nav__icon"></span></a>
+		<nav class="nav">
+			<ul class="nav__list">
+				
+				<li class="nav__item nav__link main-page">O SPOLEČNOSTI
+				</li>
+				<li class="nav__item nav__link products-page">PROJEKTY</li>
+				<li class="nav__item nav__link contacts-page">KONTAKTY</li>
+
+			</ul>
+		</nav>
+
+
 		<video autoplay muted loop id="myVideo">
-			<source src="5.mp4" type="video/mp4">
+			<source src="11.mp4" type="video/mp4">
 		</video>
 
 		<div id="start">
@@ -57,7 +70,12 @@
 					projektů. Sestavujeme špičkové specialisty na stavbu nádherných rodinných domů ve Středočeském kraji. Mezi naše
 					hlavní výhody lze uvést poměr kvality a ceny, individuální přístup k jednotlivým zákazníkům.
 				</p>
-			<a href=""><img src="img/play.svg" alt="play video"></a>	
+				<div class="play-button-holder">
+
+					<a href="#ex1" rel="modal:open"><img src="img/play.svg" alt="play video"></a>
+				</div>
+
+
 			</div>
 		</div>
 		<div id="products">
@@ -78,10 +96,16 @@
 
 		</footer>
 	</div>
+	<div id="ex1" class="modal">
+		<video controls>
+			<source src="11.mp4" type="video/mp4">
 
+			Your browser does not support the video tag.
+		</video>
+	</div>
 
 	<script src="js/scripts.min.js"></script>
-
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
 </body>
 
 </html>
