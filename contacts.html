@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.min.css">
+    <title>Contacts</title>
+</head>
+<body>
+    <div class="contacts">
+            <header>
+                    <nav class="menu">
+                            <div class="logo"><img src="img/logo.png" alt=""></div>
+                            <ul class="desktop-menu">
+                                <li><a class="main-page" href="#">O SPOLEČNOSTI</a></li>
+                                <li><a class="products-page" href="#">PROJEKTY</a> </li>
+                                <li><a class="contacts-page" href="#">KONTAKTY</a></li>
+                            </ul>
+                        </nav>
+                        <a href="#" class="nav__trigger"><span class="nav__icon"></span></a>
+                        <nav class="nav">
+                            <ul class="nav__list">
+                                <li><a class="nav__item nav__link main-page" href="#">O SPOLEČNOSTI</a></li>
+                                <li><a class="nav__item nav__link products-page" href="#">PROJEKTY</a></li>
+                                <li><a class="nav__item nav__link contacts-page" href="#">KONTAKTY</a></li>
+                            </ul>
+                        </nav>
+            </header>
+            <section id="contacts" class="section-custom">
+                    <div class="contacts-banner">
+                        <div class="contact-form">
+                            <h1 class="text-uppercase text-center">KONTAKTY</h1>
+                            <ul class="contact-info">
+                                <li>NIKASTAR, s.r.o.</li>
+                                <li>Kmochova 858/11, Smíchov, 150 00 Praha,</li>
+                                <li>IČO 01765876</li>
+                                <li>info@nikastar.cz</li>
+                            </ul>
+        
+                            <form class="js-contact-form" role="form" action="mail/contact.php" method="post">
+                                <div class="d-flex">
+                                    <div class="wrapper col-sm-6 col-12" data-placeholder="NAME">
+                                        <input id="name" name="name" type="name" class="form-control name input" id="exampleInputName1" required />
+                                        <label for="name"></label>
+                                    </div>
+        
+                                    <div class="wrapper col-sm-6 col-12" data-placeholder="EMAIL">
+                                        <input id="email" name="email" type="email" class="form-control email" id="exampleInputEmail1" required />
+                                        <label for="email" class="custom"></label>
+                                    </div>
+                                    
+                                </div>
+                                <div class="d-flex">
+                                        <div class="wrapper col-sm-6 col-12" data-placeholder="COMPANY">
+                                            <input id="company" name="company" type="text" class="form-control name input" id="exampleInputName1" required />
+                                            <label for="company"></label>
+                                        </div>
+                                        <div class="wrapper col-sm-6 col-12" data-placeholder="PHONE">
+                                            <input id="tel" name="tel" type="tel" class="form-control name input email" id="exampleInputName1" required />
+                                            <label for="tel" class="custom"></label>
+                                        </div>
+                                    </div>
+                                <div class="d-flex">
+                                    <div class="form-group message col-12">
+                                        <textarea name="message" class="form-control message" rows="4" placeholder="Message" required></textarea>
+                                        <!-- <span class="form-error">please enter message</span> -->
+                                    </div>
+                                </div>
+        
+        
+                                <button type="submit" class="flat-button">Contact us</button>
+        
+        
+                            </form>
+        
+        
+                        </div>
+                    </div>
+        
+                </section>
+            <footer>
+                    <div class="container text-center">
+                        <span class="copyright">
+                            2018 © <strong>NIKASTAR.cz</strong>
+                        </span>
+                        <p class="footer-description">Poučení o ochraně osobních údajů - Mimosoudní řešení spotřebitelských sporů</p>
+                        <p class="no-padding">Provozovatelem tohoto serveru je NIKASTAR, s.r.o. se sídlem Kmochova 858/11, Smíchov, 150 00
+                            Praha, IČO 01765876, zapsaná v obchodním rejstříku vedeném Městským soudem v Praze, oddíl C, vložka 211269.</p>
+                    </div>
+            
+                </footer>
+        
+    </div>
+    
+        <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+	<script src="js/scripts.min.js"></script>
+	<script src="lightslider.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+
+</body>
+</html>

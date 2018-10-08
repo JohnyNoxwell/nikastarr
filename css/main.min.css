@@ -3099,6 +3099,12 @@ footer {
   width: 100vw;
 }
 
+@media screen and (max-width: 576px) {
+  footer {
+    position: static;
+  }
+}
+
 footer p {
   font-size: 12px;
   font-weight: 500;
@@ -3125,12 +3131,7 @@ footer p {
   #products,
   #contacts,
   #start {
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
-    left: 5%;
-    width: 90%;
+    position: static;
   }
 }
 
@@ -3138,6 +3139,14 @@ footer p {
 #contacts {
   opacity: 0;
   z-index: -1;
+}
+
+@media screen and (max-width: 576px) {
+  #products,
+  #contacts {
+    opacity: 1;
+    z-index: 1;
+  }
 }
 
 .footer-description {
@@ -3574,8 +3583,39 @@ p {
   .desktop-menu {
     display: none;
   }
-  #app {
+  #app, .products, .contacts {
     background: url(../img/bg.jpg);
+  }
+  #app {
+    height: auto;
+  }
+  #start {
+    margin-bottom: 66px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  #start h1 {
+    margin-bottom: 30px;
+  }
+  #products,
+  #contacts {
+    display: none;
+  }
+  #products.section-custom {
+    display: block;
+    margin-bottom: 66px;
+  }
+  #products.section-custom p {
+    padding-top: 20px;
+  }
+  #contacts.section-custom {
+    display: block;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-bottom: 66px;
+  }
+  #contacts.section-custom h1 {
+    margin-bottom: 30px;
   }
 }
 
