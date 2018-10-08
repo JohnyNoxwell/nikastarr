@@ -3414,14 +3414,12 @@ p {
 }
 
 .nav {
-  z-index: 100 !important;
-  opacity: 0;
-  -webkit-transition-property: all;
-  -o-transition-property: all;
-  transition-property: all;
-  -webkit-transition-duration: 0.3s;
-       -o-transition-duration: 0.3s;
-          transition-duration: 0.3s;
+  display: none;
+  position: relative;
+  width: 0;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
 }
 
 .nav__list {
@@ -3437,7 +3435,11 @@ p {
 }
 
 .nav--active .nav {
-  opacity: 1;
+  display: block;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  width: 100%;
   background-color: #333;
 }
 
@@ -3590,6 +3592,7 @@ p {
     height: auto;
   }
   #start {
+    padding-top: 66px;
     margin-bottom: 66px;
     padding-right: 15px;
     padding-left: 15px;
@@ -3604,11 +3607,13 @@ p {
   #products.section-custom {
     display: block;
     margin-bottom: 66px;
+    padding-top: 66px;
   }
   #products.section-custom p {
     padding-top: 20px;
   }
   #contacts.section-custom {
+    padding-top: 66px;
     display: block;
     padding-right: 15px;
     padding-left: 15px;
