@@ -113,7 +113,7 @@
 						<li>IČO 01765876</li>
 						<li>info@nikastar.cz</li>
 					</ul>
-					
+
 					<form class="js-contact-form" role="form" action="mail/contact.php" method="post">
 						<div class="d-flex">
 							<div class="wrapper col-sm-6 col-12" data-placeholder="NAME">
@@ -125,7 +125,18 @@
 								<input id="email" name="email" type="email" class="form-control email" id="exampleInputEmail1" required />
 								<label for="email" class="custom"></label>
 							</div>
+							
 						</div>
+						<div class="d-flex">
+								<div class="wrapper col-sm-6 col-12" data-placeholder="COMPANY">
+									<input id="company" name="company" type="text" class="form-control name input" id="exampleInputName1" required />
+									<label for="company"></label>
+								</div>
+								<div class="wrapper col-sm-6 col-12" data-placeholder="PHONE">
+									<input id="tel" name="tel" type="tel" class="form-control name input email" id="exampleInputName1" required />
+									<label for="tel" class="custom"></label>
+								</div>
+							</div>
 						<div class="d-flex">
 							<div class="form-group message col-12">
 								<textarea name="message" class="form-control message" rows="4" placeholder="Message" required></textarea>
