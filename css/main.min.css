@@ -2939,62 +2939,6 @@ body {
   background: rgba(255, 255, 255, 0.8) !important;
 }
 
-nav li a {
-  position: relative;
-  text-decoration: none;
-  color: #333;
-  -webkit-transition: color .2s ease-in-out;
-  -o-transition: color .2s ease-in-out;
-  transition: color .2s ease-in-out;
-}
-
-nav li a:before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  width: 0;
-  border-bottom: solid 2px;
-}
-
-.no-padding {
-  padding-left: 0;
-  padding-right: 0;
-}
-
-nav li a:before {
-  left: 0;
-}
-
-nav li a:hover {
-  color: #1D93C4;
-  text-decoration: none;
-}
-
-nav li a:hover:before {
-  width: 100%;
-}
-
-nav li a:before {
-  -webkit-transition: width .2s ease-in-out;
-  -o-transition: width .2s ease-in-out;
-  transition: width .2s ease-in-out;
-}
-
-nav li,
-.logo {
-  display: inline-block;
-  padding: 10px 15px;
-  text-transform: uppercase;
-  max-width: 320px;
-}
-
-nav a {
-  display: inline-block;
-  padding: 0;
-  font-weight: 500;
-  font-size: 14px;
-}
-
 .container.text-center p:last-child {
   margin-bottom: 0;
 }
