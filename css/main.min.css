@@ -2952,9 +2952,8 @@ nav {
   font-weight: 500;
 }
 
-nav li {
+nav li a {
   position: relative;
-  padding: 5px 20px;
   text-decoration: none;
   color: #333;
   -webkit-transition: color .2s ease-in-out;
@@ -2962,7 +2961,7 @@ nav li {
   transition: color .2s ease-in-out;
 }
 
-nav li:before {
+nav li a:before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -2975,19 +2974,20 @@ nav li:before {
   padding-right: 0;
 }
 
-nav li:before {
+nav li a:before {
   left: 0;
 }
 
-nav li:hover {
+nav li a:hover {
   color: #1D93C4;
+  text-decoration: none;
 }
 
-nav li:hover:before {
+nav li a:hover:before {
   width: 100%;
 }
 
-nav li:before {
+nav li a:before {
   -webkit-transition: width .2s ease-in-out;
   -o-transition: width .2s ease-in-out;
   transition: width .2s ease-in-out;
@@ -2997,10 +2997,15 @@ nav li,
 .logo {
   display: inline-block;
   padding: 10px 15px;
-  font-weight: 500;
-  font-size: 14px;
   text-transform: uppercase;
   max-width: 320px;
+}
+
+nav a {
+  display: inline-block;
+  padding: 0;
+  font-weight: 500;
+  font-size: 14px;
 }
 
 .container.text-center p:last-child {
