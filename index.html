@@ -31,13 +31,13 @@
 </head>
 
 <body>
-	
+
 	<div id="app">
 		<nav class="menu">
 			<div class="logo"><img src="img/logo.png" alt=""></div>
 			<ul class="desktop-menu">
 				<li class="main-page">O SPOLEČNOSTI</li>
-				<li class="products-page">	PROJEKTY</li>
+				<li class="products-page"> PROJEKTY</li>
 				<li class="contacts-page">KONTAKTY</li>
 			</ul>
 		</nav>
@@ -53,62 +53,100 @@
 		<video autoplay muted loop id="myVideo">
 			<source src="11.mp4" type="video/mp4">
 		</video>
-		
-			<section id="start">
-				<div class="main-banner">
-					<h1 class="text-uppercase text-center">O SPOLEČNOSTI</h1>
-					<p>NIKASTAR je soukromá stavební firma se sídlem v Praze. Za posledních 20 let jsme úspěšně dokončili více než 150
-						projektů. Sestavujeme špičkové specialisty na stavbu nádherných rodinných domů ve Středočeském kraji. Mezi naše
-						hlavní výhody lze uvést poměr kvality a ceny, individuální přístup k jednotlivým zákazníkům.
-					</p>
-					<div class="play-button-holder">
-	
-						<a href="#ex1" rel="modal:open"><img src="img/play.svg" alt="play video"></a>
+
+		<section id="start">
+			<div class="main-banner">
+				<h1 class="text-uppercase text-center">O SPOLEČNOSTI</h1>
+				<p>NIKASTAR je soukromá stavební firma se sídlem v Praze. Za posledních 20 let jsme úspěšně dokončili více než 150
+					projektů. Sestavujeme špičkové specialisty na stavbu nádherných rodinných domů ve Středočeském kraji. Mezi naše
+					hlavní výhody lze uvést poměr kvality a ceny, individuální přístup k jednotlivým zákazníkům.
+				</p>
+				<div class="play-button-holder">
+
+					<a href="#ex1" rel="modal:open"><img src="img/play.svg" alt="play video"></a>
+				</div>
+			</div>
+		</section>
+		<section id="products">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-12 no-padding">
+						<ul id="image-gallery" class="gallery list-unstyled cS-hidden">
+							<li data-thumb="img/1.jpg">
+								<img class="img-responsive" src="img/1.jpg" />
+							</li>
+							<li data-thumb="img/2.jpg">
+								<img class="img-responsive" src="img/2.jpg" />
+							</li>
+							<li data-thumb="img/3.jpg">
+								<img class="img-responsive" src="img/3.jpg" />
+							</li>
+							<li data-thumb="img/4.jpg">
+								<img class="img-responsive" src="img/4.jpg" />
+							</li>
+							<li data-thumb="img/5.jpg">
+								<img class="img-responsive" src="img/5.jpg" />
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-6 col-12 products-container">
+						<p>Zastavěná plocha domu je 150 m2, podlahová plocha 122 m2. Dům je postaven z keramických bloků Porotherm,
+							fasáda je zateplena izolací tl. 150 mm, okna jsou plastová s trojsklem, střecha je zateplena izolací tl. 260 mm,
+							tašky jsou betonové, KM Beta. Dispozice domu 4+kk: prostorný otevřený obývací pokoj s kuchyní a jídelnou,
+							ložnice, dva dětské pokoje, šatna, koupelna se sprchovým koutem a vanou, samostatná toaleta, technická místnost
+							a zádveří. Z obývacího pokoje, ložnice a dalšího pokoje je přístupná prostorná venkovní terasa (24 m2). Dům je
+							vytápěn teplovodním podlahovým topením s plynovým kotlem, v obývacím pokoji bude možné osadit krb, nebo krbová
+							kamna. IS: elektřina 230/400 V, obecní vodovod, obecní kanalizace, zemní plyn, asfaltová komunikace, veřejné
+							osvětlení. Parkování na vlastním pozemku, na zpevněném parkovacím stání. Pozemek bude celý oplocen, včetně
+							posuvné vjezdové brány na dálkové ovládání.</p>
 					</div>
 				</div>
-			</section>
-			<section id="products">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-6 col-12 no-padding">
-							<ul id="image-gallery" class="gallery list-unstyled cS-hidden">
-								<li data-thumb="img/1.jpg">
-									<img class="img-responsive" src="img/1.jpg" />
-								</li>
-								<li data-thumb="img/2.jpg">
-									<img class="img-responsive" src="img/2.jpg" />
-								</li>
-								<li data-thumb="img/3.jpg">
-									<img class="img-responsive" src="img/3.jpg" />
-								</li>
-								<li data-thumb="img/4.jpg">
-									<img class="img-responsive" src="img/4.jpg" />
-								</li>
-								<li data-thumb="img/5.jpg">
-									<img class="img-responsive" src="img/5.jpg" />
-								</li>
-							</ul>
+			</div>
+		</section>
+		<section id="contacts">
+			<div class="contacts-banner">
+				<div class="contact-form">
+					<h1 class="text-uppercase text-center">KONTAKTY</h1>
+					<ul class="contact-info">
+						<li>NIKASTAR, s.r.o.</li>
+						<li>Kmochova 858/11, Smíchov, 150 00 Praha,</li>
+						<li>IČO 01765876</li>
+						<li>info@nikastar.cz</li>
+					</ul>
+					
+					<form class="js-contact-form" role="form" action="mail/contact.php" method="post">
+						<div class="d-flex">
+							<div class="wrapper col-sm-6 col-12" data-placeholder="NAME">
+								<input id="name" name="name" type="name" class="form-control name input" id="exampleInputName1" required />
+								<label for="name"></label>
+							</div>
+
+							<div class="wrapper col-sm-6 col-12" data-placeholder="EMAIL">
+								<input id="email" name="email" type="email" class="form-control email" id="exampleInputEmail1" required />
+								<label for="email" class="custom"></label>
+							</div>
 						</div>
-						<div class="col-md-6 col-12 products-container">
-							<p>Zastavěná plocha domu je 150 m2, podlahová plocha 122 m2. Dům je postaven z keramických bloků Porotherm,
-								fasáda je zateplena izolací tl. 150 mm, okna jsou plastová s trojsklem, střecha je zateplena izolací tl. 260 mm,
-								tašky jsou betonové, KM Beta. Dispozice domu 4+kk: prostorný otevřený obývací pokoj s kuchyní a jídelnou,
-								ložnice, dva dětské pokoje, šatna, koupelna se sprchovým koutem a vanou, samostatná toaleta, technická místnost
-								a zádveří. Z obývacího pokoje, ložnice a dalšího pokoje je přístupná prostorná venkovní terasa (24 m2). Dům je
-								vytápěn teplovodním podlahovým topením s plynovým kotlem, v obývacím pokoji bude možné osadit krb, nebo krbová
-								kamna. IS: elektřina 230/400 V, obecní vodovod, obecní kanalizace, zemní plyn, asfaltová komunikace, veřejné
-								osvětlení. Parkování na vlastním pozemku, na zpevněném parkovacím stání. Pozemek bude celý oplocen, včetně
-								posuvné vjezdové brány na dálkové ovládání.</p>
+						<div class="d-flex">
+							<div class="form-group message col-12">
+								<textarea name="message" class="form-control message" rows="4" placeholder="Message" required></textarea>
+								<!-- <span class="form-error">please enter message</span> -->
+							</div>
 						</div>
-					</div>
+
+
+						<button type="submit" class="flat-button">Contact us</button>
+
+
+					</form>
+
+
 				</div>
-			</section>
-			<section id="contacts">
-				<h1 class="text-uppercase text-center">контакты</h1>
-			</section>
-		
-	
-		
+			</div>
+
+		</section>
+
+
+
 	</div>
 	<footer>
 		<div class="container text-center">
@@ -128,12 +166,10 @@
 			Your browser does not support the video tag.
 		</video>
 	</div>
-	<script
-  src="https://code.jquery.com/jquery-2.2.4.min.js"
-  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-  crossorigin="anonymous"></script>
-	
-	
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+	 crossorigin="anonymous"></script>
+
+
 	<script src="js/scripts.min.js"></script>
 	<script src="lightslider.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
