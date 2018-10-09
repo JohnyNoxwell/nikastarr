@@ -2942,29 +2942,7 @@ body, p, h1, input {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   color: #473335 !important;
-  position: relative;
   display: block;
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.nav-link:hover:after {
-  content: "";
-  display: block;
-  position: absolute;
-  bottom: 0px;
-  width: -webkit-calc(100% - 15px);
-  width: calc(100% - 15px);
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.nav-link:after {
-  height: 2px;
-  background-color: #1D93C4;
-  width: 0;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
