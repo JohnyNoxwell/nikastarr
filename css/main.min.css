@@ -2787,7 +2787,7 @@ body {
   line-height: 1.65;
   font-family: "roboto-example", sans-serif;
   overflow-x: hidden;
-  color: #333;
+  color: #473335 !important;
 }
 
 body input,
@@ -2815,7 +2815,7 @@ strong {
   font-weight: bold;
 }
 
-body {
+body, p, h1, input {
   font-family: 'Roboto', sans-serif;
   color: #3F4446;
 }
@@ -2935,8 +2935,18 @@ body {
   }
 }
 
+.nav-link {
+  font-weight: 500;
+  color: #473335 !important;
+}
+
 .navbar {
   background: rgba(255, 255, 255, 0.8) !important;
+}
+
+.no-padding {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .container.text-center p:last-child {
@@ -3020,6 +3030,35 @@ ul {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.products-container p {
+  color: #473335;
+}
+
+.products-container h1 {
+  color: #473335;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.products-container h1:after {
+  content: '';
+  display: block;
+  position: absolute;
+  height: 4px;
+  width: 50px;
+  background: #3F4446;
+  bottom: -4px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 footer {
@@ -3040,6 +3079,7 @@ footer p {
   font-size: 12px;
   font-weight: 500;
   line-height: 1;
+  color: #473335;
 }
 
 #start {
@@ -3088,10 +3128,14 @@ footer p {
   background: rgba(255, 255, 255, 0.9);
   -webkit-border-radius: 8px;
           border-radius: 8px;
-  color: #3F4446;
+  color: #473335;
   max-width: 400px;
   padding: 10px;
   text-align: justify;
+}
+
+.main-banner p {
+  color: #473335;
 }
 
 .contacts-banner {
@@ -3109,7 +3153,7 @@ footer p {
 }
 
 .contact-form h1 {
-  color: #3F4446;
+  color: #473335;
   position: relative;
   margin-bottom: 15px;
 }
@@ -3152,7 +3196,7 @@ footer p {
 }
 
 .main-banner h1 {
-  color: #3F4446;
+  color: #473335;
   position: relative;
   margin-bottom: 15px;
 }
@@ -3369,6 +3413,9 @@ p {
   */
 /*==========  Desktop First  ==========*/
 @media (max-width: 575.98px) {
+  h1 {
+    font-size: 30px;
+  }
   .desktop-menu {
     display: none;
   }
