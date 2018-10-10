@@ -2794,6 +2794,11 @@ body textarea {
   outline: none;
 }
 
+.ico {
+  color: #473335 !important;
+  pointer-events: none;
+}
+
 .img-responsive {
   display: block;
   max-width: 100%;
