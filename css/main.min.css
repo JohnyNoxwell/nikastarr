@@ -2794,6 +2794,14 @@ body textarea {
   outline: none;
 }
 
+.no-padding-left {
+  padding-left: 0;
+}
+
+.no-padding-right {
+  padding-right: 0;
+}
+
 .ico {
   color: #473335 !important;
   pointer-events: none;
@@ -3062,7 +3070,16 @@ ul {
 #contacts {
   min-height: -webkit-calc(100vh - 155px);
   min-height: calc(100vh - 155px);
-  background: #1D93C4;
+  /* ff3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(1%, rgba(29, 147, 196, 0.95)), color-stop(51%, rgba(29, 147, 196, 0.98)), color-stop(80%, #0bbdd1), color-stop(100%, #00dbdb));
+  /* safari4+,chrome */
+  background: -webkit-linear-gradient(1deg, rgba(29, 147, 196, 0.95) 1%, rgba(29, 147, 196, 0.98) 51%, #0bbdd1 80%, #00dbdb 100%);
+  /* safari5.1+,chrome10+ */
+  background: -o-linear-gradient(1deg, rgba(29, 147, 196, 0.95) 1%, rgba(29, 147, 196, 0.98) 51%, #0bbdd1 80%, #00dbdb 100%);
+  /* opera 11.10+ */
+  /* ie10+ */
+  background: linear-gradient(89deg, rgba(29, 147, 196, 0.95) 1%, rgba(29, 147, 196, 0.98) 51%, #0bbdd1 80%, #00dbdb 100%);
+  /* w3c */
 }
 
 .modal {
@@ -3098,6 +3115,7 @@ ul {
   color: #fff;
   position: relative;
   margin-bottom: 30px;
+  margin-top: 30px;
 }
 
 footer {
@@ -3150,15 +3168,11 @@ footer p {
 
 .contacts-banner {
   width: 100%;
-  max-width: 400px;
 }
 
 .contact-form {
-  background: rgba(255, 255, 255, 0.9);
+  background: #fff;
   color: #3F4446;
-  max-width: 400px;
-  -webkit-border-radius: 8px;
-          border-radius: 8px;
   padding: 10px;
 }
 
@@ -3415,8 +3429,19 @@ p, a {
   .desktop-menu {
     display: none;
   }
-  #app, .products, .contacts {
-    background: #1D93C4;
+  #app,
+  .products,
+  .contacts {
+    /* ff3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(1%, rgba(29, 147, 196, 0.95)), color-stop(51%, rgba(29, 147, 196, 0.98)), color-stop(80%, #0bbdd1), color-stop(100%, #00dbdb));
+    /* safari4+,chrome */
+    background: -webkit-linear-gradient(1deg, rgba(29, 147, 196, 0.95) 1%, rgba(29, 147, 196, 0.98) 51%, #0bbdd1 80%, #00dbdb 100%);
+    /* safari5.1+,chrome10+ */
+    background: -o-linear-gradient(1deg, rgba(29, 147, 196, 0.95) 1%, rgba(29, 147, 196, 0.98) 51%, #0bbdd1 80%, #00dbdb 100%);
+    /* opera 11.10+ */
+    /* ie10+ */
+    background: linear-gradient(89deg, rgba(29, 147, 196, 0.95) 1%, rgba(29, 147, 196, 0.98) 51%, #0bbdd1 80%, #00dbdb 100%);
+    /* w3c */
   }
   #app {
     height: auto;
