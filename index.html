@@ -34,14 +34,7 @@
 <body>
 
 	<div id="app">
-		<!-- <nav class="menu">
-			
-			<ul class="desktop-menu">
-				<li><a class="main-page" href="#">O SPOLEČNOSTI</a></li>
-				<li><a class="products-page" href="#">PROJEKTY</a> </li>
-				<li><a class="contacts-page" href="#">KONTAKTY</a></li>
-			</ul>
-		</nav> -->
+	
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
 			<a class="navbar-brand" href="#">
 				<div class="logo"><img src="img/logo.png" alt=""></div>
@@ -54,14 +47,14 @@
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav ml-auto">
 					<li class="nav-item">
-						<a class="nav-link main-page" href="#">O SPOLEČNOSTI<span class="sr-only">(current)</span></a>
+						<a class="nav-link main-page" href="index.html">O SPOLEČNOSTI<span class="sr-only">(current)</span></a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link products-page" href="#">PROJEKTY</a>
+						<a class="nav-link products-page" href="products.html">PROJEKTY</a>
 					</li>
 
 					<li class="nav-item">
-						<a class="nav-link contacts-page" href="#">KONTAKTY</a>
+						<a class="nav-link contacts-page" href="contacts.html">KONTAKTY</a>
 					</li>
 				</ul>
 
@@ -82,96 +75,7 @@
 				</div>
 			</div>
 		</section>
-		<section id="products">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6 col-12 no-padding">
-						<ul id="image-gallery" class="gallery list-unstyled cS-hidden">
-							<li data-thumb="img/1.jpg">
-								<img class="img-responsive" src="img/1.jpg" />
-							</li>
-							<li data-thumb="img/2.jpg">
-								<img class="img-responsive" src="img/2.jpg" />
-							</li>
-							<li data-thumb="img/3.jpg">
-								<img class="img-responsive" src="img/3.jpg" />
-							</li>
-							<li data-thumb="img/4.jpg">
-								<img class="img-responsive" src="img/4.jpg" />
-							</li>
-							<li data-thumb="img/5.jpg">
-								<img class="img-responsive" src="img/5.jpg" />
-							</li>
-						</ul>
-					</div>
-					<div class="col-md-6 col-12 products-container">
-						<h1>PROJEKTY</h1>
-
-						<p>Zastavěná plocha domu je 150 m2, podlahová plocha 122 m2. Dům je postaven z keramických bloků Porotherm,
-							fasáda je zateplena izolací tl. 150 mm, okna jsou plastová s trojsklem, střecha je zateplena izolací tl. 260 mm,
-							tašky jsou betonové, KM Beta. Dispozice domu 4+kk: prostorný otevřený obývací pokoj s kuchyní a jídelnou,
-							ložnice, dva dětské pokoje, šatna, koupelna se sprchovým koutem a vanou, samostatná toaleta, technická místnost
-							a zádveří. Z obývacího pokoje, ložnice a dalšího pokoje je přístupná prostorná venkovní terasa (24 m2). Dům je
-							vytápěn teplovodním podlahovým topením s plynovým kotlem, v obývacím pokoji bude možné osadit krb, nebo krbová
-							kamna. IS: elektřina 230/400 V, obecní vodovod, obecní kanalizace, zemní plyn, asfaltová komunikace, veřejné
-							osvětlení. Parkování na vlastním pozemku, na zpevněném parkovacím stání. Pozemek bude celý oplocen, včetně
-							posuvné vjezdové brány na dálkové ovládání.</p>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section id="contacts">
-			<div class="contacts-banner">
-				<div class="contact-form">
-					<h1 class="text-uppercase text-center">KONTAKTY</h1>
-					<ul class="contact-info">
-						<li>NIKASTAR, s.r.o.</li>
-						<li>Kmochova 858/11, Smíchov, 150 00 Praha,</li>
-						<li>IČO 01765876</li>
-						<li>info@nikastar.cz</li>
-					</ul>
-
-					<form class="js-contact-form" role="form" action="mail/contact.php" method="post">
-						<div class="d-flex">
-							<div class="wrapper col-sm-6 col-12" data-placeholder="JMÉNO">
-								<input id="name" name="name" type="name" class="form-control name input" id="exampleInputName1" required />
-								<label for="name"></label>
-							</div>
-
-							<div class="wrapper col-sm-6 col-12" data-placeholder="EMAIL">
-								<input id="email" name="email" type="email" class="form-control email" id="exampleInputEmail1" required />
-								<label for="email" class="custom"></label>
-							</div>
-
-						</div>
-						<div class="d-flex">
-							<div class="wrapper col-sm-6 col-12" data-placeholder="SPOLEČNOST">
-								<input id="company" name="company" type="text" class="form-control company input" id="exampleInputName1" required />
-								<label for="company"></label>
-							</div>
-							<div class="wrapper col-sm-6 col-12" data-placeholder="TELEFON">
-								<input id="tel" name="tel" type="tel" class="form-control phone input " id="exampleInputName1" required />
-								<label for="tel" class="custom"></label>
-							</div>
-						</div>
-						<div class="d-flex">
-							<div class="form-group message col-12">
-								<textarea name="message" class="form-control message" rows="4" placeholder="Message" required></textarea>
-								<!-- <span class="form-error">please enter message</span> -->
-							</div>
-						</div>
-
-
-						<button type="submit" class="flat-button">Odeslat</button>
-
-
-					</form>
-
-
-				</div>
-			</div>
-
-		</section>
+		
 
 
 		<footer>
@@ -229,13 +133,14 @@
 	</script>
 	<!-- <script src="js/scripts.min.js"></script>
 	<script src="js/"></script> -->
+	
 	<script src="lightslider.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
 	 crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
 	 crossorigin="anonymous"></script>
-
+	 
 </body>
 
 </html>

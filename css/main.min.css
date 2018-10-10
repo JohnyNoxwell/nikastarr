@@ -2983,7 +2983,7 @@ body, p, h1, input {
 }
 
 .navbar {
-  background: rgba(255, 255, 255, 0.8) !important;
+  background: #fff !important;
 }
 
 .no-padding {
@@ -3037,8 +3037,6 @@ ul {
 #products,
 #start,
 #contacts {
-  height: -webkit-calc(100vh - 150px);
-  height: calc(100vh - 150px);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3061,12 +3059,18 @@ ul {
   }
 }
 
+#contacts {
+  min-height: -webkit-calc(100vh - 155px);
+  min-height: calc(100vh - 155px);
+  background: #1D93C4;
+}
+
 .modal {
   z-index: 9999;
 }
 
 .products-container {
-  background: rgba(255, 255, 255, 0.8);
+  background: #1D93C4;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3075,6 +3079,10 @@ ul {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -3083,35 +3091,18 @@ ul {
 }
 
 .products-container p {
-  color: #473335;
+  color: #fff;
 }
 
 .products-container h1 {
-  color: #473335;
+  color: #fff;
   position: relative;
   margin-bottom: 30px;
 }
 
-.products-container h1:after {
-  content: '';
-  display: block;
-  position: absolute;
-  height: 4px;
-  width: 50px;
-  background: #3F4446;
-  bottom: -4px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
-}
-
 footer {
-  background: rgba(255, 255, 255, 0.8);
+  background: #fff;
   padding: 10px 15px;
-  position: absolute;
-  bottom: 0;
-  width: 100vw;
 }
 
 @media screen and (max-width: 576px) {
@@ -3129,40 +3120,16 @@ footer p {
 
 #start {
   z-index: 2;
-}
-
-#products,
-#contacts,
-#start {
-  position: absolute;
-  top: 61px;
-  left: 0;
-  width: 100%;
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
-}
-
-@media screen and (max-width: 576px) {
-  #products,
-  #contacts,
-  #start {
-    position: static;
-  }
-}
-
-#products,
-#contacts {
-  opacity: 0;
-  z-index: -1;
-}
-
-@media screen and (max-width: 576px) {
-  #products,
-  #contacts {
-    opacity: 1;
-    z-index: 1;
-  }
+  min-height: -webkit-calc(100vh - 155px);
+  min-height: calc(100vh - 155px);
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .footer-description {
@@ -3170,9 +3137,7 @@ footer p {
 }
 
 .main-banner {
-  background: rgba(255, 255, 255, 0.9);
-  -webkit-border-radius: 8px;
-          border-radius: 8px;
+  background: #fff;
   color: #473335;
   max-width: 400px;
   padding: 10px;
@@ -3203,20 +3168,6 @@ footer p {
   margin-bottom: 15px;
 }
 
-.contact-form h1:after {
-  content: '';
-  display: block;
-  position: absolute;
-  height: 4px;
-  width: 50px;
-  background: #3F4446;
-  bottom: -4px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
-}
-
 .contact-form input {
   border: none;
   outline: none;
@@ -3244,20 +3195,6 @@ footer p {
   color: #473335;
   position: relative;
   margin-bottom: 15px;
-}
-
-.main-banner h1:after {
-  content: '';
-  display: block;
-  position: absolute;
-  height: 4px;
-  width: 50px;
-  background: #3F4446;
-  bottom: -4px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
 }
 
 .main-banner img {
@@ -3479,7 +3416,7 @@ p, a {
     display: none;
   }
   #app, .products, .contacts {
-    background: url(../img/bg.jpg);
+    background: #1D93C4;
   }
   #app {
     height: auto;
@@ -3493,14 +3430,8 @@ p, a {
   #start h1 {
     margin-bottom: 30px;
   }
-  #products,
-  #contacts {
-    display: none;
-  }
   #products.section-custom {
     display: block;
-    margin-bottom: 66px;
-    padding-top: 66px;
   }
   #products.section-custom p {
     padding-top: 20px;
