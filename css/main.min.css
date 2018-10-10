@@ -3150,6 +3150,13 @@ footer p {
           justify-content: flex-end;
 }
 
+@media screen and (max-width: 600px) {
+  #start {
+    min-height: -webkit-calc(100vh - 190px);
+    min-height: calc(100vh - 190px);
+  }
+}
+
 .footer-description {
   margin-bottom: 7px;
 }
@@ -3447,8 +3454,14 @@ p, a {
     height: auto;
   }
   #start {
-    padding-top: 66px;
-    margin-bottom: 66px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding-right: 15px;
     padding-left: 15px;
   }
