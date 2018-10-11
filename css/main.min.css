@@ -3122,6 +3122,7 @@ ul {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
+  text-align: justify;
 }
 
 .products-container p {
