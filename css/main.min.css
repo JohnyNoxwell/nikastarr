@@ -2792,6 +2792,7 @@ body input,
 body textarea {
   border: #666 1px solid;
   outline: none;
+  color: #fff !important;
 }
 
 .no-padding-left {
@@ -2841,7 +2842,7 @@ body, p, h1, input {
   border: none;
   width: 250px;
   height: 60px;
-  background: #1D93C4;
+  background: #fff;
   margin-top: 10px;
   margin-left: auto;
   overflow: hidden;
@@ -2853,8 +2854,12 @@ body, p, h1, input {
   /* Typo */
   line-height: 60px;
   text-align: center;
-  color: #fff;
+  color: #473335;
   display: block;
+}
+
+.flat-button:hover {
+  color: #fff;
 }
 
 .flat-button:after {
@@ -2863,7 +2868,7 @@ body, p, h1, input {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #33aee1;
+  background: #016DC7;
   content: "";
   z-index: -2;
   -webkit-transition: -webkit-transform .3s;
@@ -3178,8 +3183,8 @@ footer p {
 }
 
 .contact-form {
-  background: #fff;
-  color: #3F4446;
+  background: transparent;
+  color: #fff;
   padding: 10px;
 }
 
@@ -3260,7 +3265,7 @@ label {
   left: 0;
   width: 90%;
   height: 1px;
-  background: rgba(0, 0, 0, 0.9);
+  background: #fff;
 }
 
 @media screen and (max-width: 768px) {
@@ -3296,7 +3301,30 @@ label {
   background: transparent;
   padding-left: 15px;
   padding-top: 15px;
-  border: 1px solid rgba(0, 0, 0, 0.9);
+  border: 1px solid #fff;
+  -webkit-border-radius: 0 !important;
+          border-radius: 0 !important;
+  color: #fff;
+}
+
+.form-group.message.col-12 textarea::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.form-group.message.col-12 textarea::-moz-placeholder {
+  color: #fff;
+}
+
+.form-group.message.col-12 textarea:-ms-input-placeholder {
+  color: #fff;
+}
+
+.form-group.message.col-12 textarea::-ms-input-placeholder {
+  color: #fff;
+}
+
+.form-group.message.col-12 textarea::placeholder {
+  color: #fff;
 }
 
 label:after {
@@ -3306,7 +3334,7 @@ label:after {
   left: 0;
   width: 0;
   height: 2px;
-  background: #1D93C4;
+  background: #fff;
   -webkit-transition: 0.4s;
   -o-transition: 0.4s;
   transition: 0.4s;
@@ -3329,20 +3357,20 @@ form {
   position: relative;
   top: 40px;
   left: -5px;
-  color: rgba(0, 0, 0, 0.9);
+  color: #fff;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
 }
 
 .wrapper.clicked:before {
-  color: #000;
+  color: rgba(255, 255, 255, 0.4);
   top: 0;
   left: 0;
 }
 
 .wrapper.clicked.filled:before {
-  color: rgba(0, 0, 0, 0.4);
+  color: rgba(250, 250, 250, 0.4);
 }
 
 p, a {
@@ -3484,6 +3512,10 @@ p, a {
   #contacts.section-custom h1 {
     margin-bottom: 30px;
   }
+}
+
+.contact-info li {
+  color: #fff;
 }
 
 .logo {
