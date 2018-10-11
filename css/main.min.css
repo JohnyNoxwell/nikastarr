@@ -2827,7 +2827,10 @@ strong {
   font-weight: bold;
 }
 
-body, p, h1, input {
+body,
+p,
+h1,
+input {
   font-family: 'Roboto', sans-serif;
   color: #3F4446;
 }
@@ -3092,7 +3095,16 @@ ul {
 }
 
 .products-container {
-  background: #1D93C4;
+  /* ff3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(1%, rgba(29, 147, 196, 0.95)), color-stop(51%, rgba(29, 147, 196, 0.98)), color-stop(80%, #0bbdd1), color-stop(100%, #00dbdb));
+  /* safari4+,chrome */
+  background: -webkit-linear-gradient(1deg, rgba(29, 147, 196, 0.95) 1%, rgba(29, 147, 196, 0.98) 51%, #0bbdd1 80%, #00dbdb 100%);
+  /* safari5.1+,chrome10+ */
+  background: -o-linear-gradient(1deg, rgba(29, 147, 196, 0.95) 1%, rgba(29, 147, 196, 0.98) 51%, #0bbdd1 80%, #00dbdb 100%);
+  /* opera 11.10+ */
+  /* ie10+ */
+  background: linear-gradient(89deg, rgba(29, 147, 196, 0.95) 1%, rgba(29, 147, 196, 0.98) 51%, #0bbdd1 80%, #00dbdb 100%);
+  /* w3c */
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3373,7 +3385,8 @@ form {
   color: rgba(250, 250, 250, 0.4);
 }
 
-p, a {
+p,
+a {
   font-family: 'Roboto', sans-serif;
 }
 
